@@ -1,5 +1,6 @@
 #
-The first native JS pr
+The first native JS project
+
 web QQ是作者一人耗时两个星期完成，借鉴腾讯WebQQ（http://web.qq.com/）开发的一个Web Desktop,和业内一些常用公开的方法和函数。
 使用原生JavaScript进行开发，自己将常用的JS函数方法封装，名为“lch.js”。
 其中采用了css3和html5的一些新功能，在Chrome浏览器下拥有更好的支持
@@ -36,4 +37,4 @@ _______________________________________________
 （1）点击焦点数字的时候，运动，并改变透明度切换桌面图标
 （2）用鼠标滚轮同样可以切换桌面
 14、点击桌面图标，显示对应网站的链接
-15.右键菜单的重新设置：让“document.oncontextmenu”的return返回“false” ，重新设置右键菜单，让其“top”和“left”跟随鼠标的坐
+15.右键菜单的重新设置：让“document.oncontextmenu”的return返回“false” ，重新设置右键菜单，让其“top”和“left”跟随鼠标的坐标
