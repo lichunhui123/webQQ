@@ -1,0 +1,99 @@
+﻿@charset "utf-8";
+/* reset.css */
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,th,td{margin:0; padding:0; font-size:12px; font-family:"微软雅黑";}
+em{font-style:normal}
+li{list-style:none}
+a{text-decoration:none;}
+img{border:none; vertical-align:top;}
+table{border-collapse:collapse;}
+textarea{ resize:none; overflow:auto;}
+.clear{zoom:1;}
+.clear:after{content:""; display:block; clear:both;}
+#box{width:1349px;margin:0 auto}
+/* end reset.css */
+
+
+/*page1.css*/
+#page1{background:url(../imgs/bg1.jpg) no-repeat center; width:100%; height:935px; overflow:hidden;}
+#page1 .content{position:relative;}
+#page1 .p1_a3{opacity:0; filter:alpha(opacity=0); background:url(../imgs/p1-3.png) no-repeat; width:461px; height:385px; position:absolute; left:445px; top:267px; z-index:2;}
+#page1 .p1_a5{background:url(../imgs/p1-5.png) no-repeat center right; position:absolute; left:0; top:50px; z-index:1; height:320px;}
+#page1 .p1_a2{background:url(../imgs/p1-2.png) no-repeat center; width:328px; height:214px; position:absolute; left:500px; top:240px; z-index:3;}
+#page1 .p1_a1_1{opacity:0; filter:alpha(opacity=0); background:url(../imgs/p1-1-1.png) no-repeat center; width:500px; height:136px; position:absolute; left:400px; top:200px; z-index:4;}
+#page1 .p1_a1_2{opacity:0; filter:alpha(opacity=0); background:url(../imgs/p1-1-2.png) no-repeat center; width:220px; height:106px; position:absolute; left:910px; top:200px; z-index:5;}
+#page1 .p1_a1_3{opacity:0; filter:alpha(opacity=0); background:url(../imgs/p1-1-3.png) no-repeat center; width:220px; height:97px; position:absolute; left:180px; top:200px; z-index:5;}
+#page1 .nav{width:440px; margin:30px auto; position:relative;}
+#ul1 li{width:100px; height:30px; font-size:18px; line-height:30px; text-align:center; list-style:none; float:left; cursor:pointer; margin-right:10px;}
+#div2{width:100px; height:30px; overflow:hidden; position:absolute;}
+#ul2{position:absolute; left:0; top:0; width:440px; height:30px;}
+#ul2 li{width:100px; height:30px; font-size:18px; line-height:30px; text-align:center; list-style:none; float:left; background:url(../imgs/navbg.jpg) no-repeat; margin-right:10px; color:#FFF; cursor:pointer;}
+/*end page1.css*/
+
+
+/*page2.css*/
+#page2{background:url(../imgs/bg2.gif) repeat; width:100%; height:935px;}
+#page2 .content{position:relative;}
+#page2 .titles{text-align:center;}
+#page2 .cons{position:absolute; left:22px; top:20px; background:url(../imgs/overlay.png); height:52px; width:180px;}
+#page2 .cons p{color:#FFF; line-height:26px; font-size:18px;}
+#page2 .rand{position:absolute; right:0; top:0; cursor:pointer; font-size:16px; color:#FFF; overflow:hidden; width:202px; height:89px;}
+#page2 .rand .rand1{background:url(../imgs/p2-2.png) no-repeat; position:absolute; top:0; width:182px; height:69px; padding:40px 0 0 20px; }
+#page2 .rand .rand2{background:url(../imgs/p2-3.png) no-repeat; position:absolute; top:89px; width:182px; height:69px; padding:40px 0 0 20px; color:#033;}
+#page2 ul{width:1300px; height:800px; margin:0 auto; background:url(../imgs/overlay.png);}
+#page2 li{float:left; margin:10px; width:302px; height:180px;}
+#page2 li img{width:302px; height:180px; border:4px solid #FFF;}
+#page2 .move{border:4px solid #F00;}
+#page2 .move img{border:none;}
+
+/*end page2.css*/
+
+
+/*page3.css*/
+#page3{background:url(../imgs/bg3.gif) repeat; width:100%; height:935px;}
+#page3 .content{position:relative;}
+#page3 .titles{text-align:center; padding-top:50px;}
+#page3 .bigImg{width:400px; height:350px; border:2px solid #309; margin:10px auto 0; }
+#page3 .bigImg img{width:400px; height:350px;}
+#page3 .list{width:768px; overflow:hidden; height:128px; margin:0px auto; position:relative;}
+#page3 .list ul{position:absolute; left:0; top:0;}
+#page3 .list li{width:98px; height:98px; margin:13px; border:2px solid #363; float:left;}
+#page3 .list li img{width:98px; height:98px;}
+#page3 .nav{width:768px; height:15px; margin:0 auto; background:#9eb833; position:relative;}
+#page3 .nav div{width:400px; height:15px; position:absolute; background:#000; left:0; top:0; font-size:10px; line-height:15px; color:#FFF; text-indent:2em;}
+#page3 .bottom{width:688px; margin:50px auto;}
+
+/*end page3.css*/
+
+
+/*page4.css*/
+#page4{background:url(../imgs/bg2.gif) repeat; width:100%; height:835px; overflow:hidden;}
+#page4 .content{position:relative;}
+#page4 .titles{text-align:center; padding-top:100px;}
+#page4 .list{width:1040px; margin:50px auto; position:relative; height:800px;}
+#page4 .list li{float:left; width:260px; text-align:center; position:absolute; opacity:0; filter:alpha(opacity=0); }
+#page4 .list li p{width:200px; margin:0 auto; font-size:12px; line-height:28px; color:#576439; text-align:left; padding-top:10px;}
+#page4 .inter{top:300px; left:0;}
+#page4 .land{top:300px; left:260px;}
+#page4 .prop{top:300px; left:520px;}
+#page4 .plane{top:300px; left:780px;}
+
+/*end page4.css*/
+
+#top{position:fixed; position:-absolute; left:0; top:0; width:39px; height:43px; opacity:0; filter:alpha(opacity=0);}
+
+
+#news{width:370px; height:470px; position:fixed; position:-absolute; background:#343433; top:0; left:0; z-index:10;}
+#news .newsTitle{padding:20px 0 10px; text-align:center;}
+#news .newsBtn{background:url(../imgs/new-bg.png) no-repeat 0 0; width:37px; height:74px; position:absolute; right:-37px; top:180px; cursor:pointer;}
+#news .newsOpen{background:url(../imgs/new-bg.png) no-repeat 0 -75px;}
+#news .newsCon{width:350px; height:360px; margin:0 auto; position:relative; overflow:hidden;}
+#news .newsCon ul{height:360px; position:absolute; width:2000px; left:0; top:0;}
+#news .newsCon li{width:350px; height:360px; float:left;}
+#news .newsCon .newsImg{width:340px; height:200px;}
+#news .newsCon .newsInfor{width:320px; margin:15px 0 5px 0; background:#171717; color:#999; height:120px; padding:10px; line-height:24px; font-size:12px; overflow:hidden;}
+#news .newsPage{text-align:right; padding-right:15px;}
+#news .newsPage i{ cursor:pointer; width:10px; height:10px; display:inline-block; background:url(../imgs/new-bg.png) no-repeat -10px -149px;}
+#news .newsPage .active{background:url(../imgs/new-bg.png) no-repeat 0 -149px; }
+
+#csswinner{position:fixed; position:-absolute; width:81px; height:59px; right:0; top:30px;}
+#cssdes{position:fixed; position:-absolute; width:68px; height:95px; right:0; top:100px;}

@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>整站练习</title>
+<style>
+body,h1,h2,h3,h4,h5,h6,p,dl,dd{margin:0; font-size:12px; font-family:"宋体";}
+ul,li{list-style:none; margin:0; padding:0;}
+a{text-decoration:none;}
+img{border:none; margin:0; vertical-align:top;}
+.clear:after{content:''; display:block; clear:both;}
+.clear{zoom:1;} 
+input{margin:0; padding:0; float:right;}
+
+.nav{width:980px; margin:8px auto; background:#FFF;}
+.top{width:980px; height:71px; border-bottom:1px solid #4cbd14;}
+.top h1{float:left;}
+.head{float:right; padding-top:13px; height:18px; overflow:hidden;}
+
+.head1{float:right; width:205px; padding-top:5px; background:url(img/sinaico.jpg) no-repeat 0px 2px;}
+.head .submit{float:right; width:21px; height:18px; margin-left:6px; background:url(img/shoushuo.jpg) no-repeat; border:none;}
+.head a{float:right; color:#8f8f8f;}
+.head .text{border:1px solid #4cbd14; width:131px; height:16px; line-height:16px; color:#999999;}
+.head1 .login{padding-left:14px; padding-right:26px; border-left:1px solid #8f8f8f;}
+.head1 .register{padding-left:14px; padding-right:15px; border-left:1px solid #8f8f8f;}
+.head1 .weibo{padding-right:15px; padding-left:23px;}
+.footer{float:right; padding-top:19px;}
+.footer a{float:right; font-family:"微软雅黑"; font-size:14px; padding-left:33px; color:#474747;}
+.footer a:hover,.footer .active{color:#4cbd14;}
+
+.second{width:980px; padding-top:20px;}
+.left{float:left; position:relative; padding-right:13px;}
+.left img{width:710px; height:215px; vertical-align:top;}
+.left .page{position:absolute; left:590px; top:201px; background:#FFF;}
+.left .page li{float:left; padding-right:1px; height:14px; line-height:14px; overflow:hidden;}
+.left .page li a{background:#5e5e5d; float:left; width:23px; text-align:center; color:#FFF; font-family:"Times New Roman", Times, serif;}
+.left .page li a:hover,.left .page li .active{background:#c70000; cursor:text;}
+.right{width:257px; float:left; background:#e9e9e9;}
+.right li a{color:#36a300;}
+.right li p{color:#929292;}
+.right .mouse{height:70px; background:url(img/mourse.jpg) no-repeat 20px 11px;}
+.right h3{line-height:24px; font-family:"微软雅黑"; font-style:normal;}
+.right .mouse h3{padding-left:75px; padding-top:5px;}
+.right .mouse p{line-height:18px; padding:0 27px 3px 76px;}
+.right .mouse span{display:block; height:2px; width:257px; background:url(img/bgline.jpg) repeat-x; overflow:hidden;}
+.right .txt{height:75px; background:url(img/text.jpg) no-repeat 20px 7px;}
+.right .txt h3{padding-left:74px; padding-top:3px;}
+.right .txt p{line-height:18px; padding:0 27px 10px 76px;}
+.right .txt span{display:block; height:2px; width:257px; background:url(img/bgline.jpg) repeat-x; overflow:hidden;}
+.right .excel{height:71px; background:url(img/excel.jpg) no-repeat 21px 9px;}
+.right .excel h3{padding-left:76px; padding-top:4px;}
+.right .excel p{padding-left:76px; padding-right:25px; line-height:18px;}
+
+.center{width:958px; padding-top:37px; padding-left:22px;}
+.center .left{float:left; width:345px;}
+.center .left1 h3{height:31px; line-height:30px; font-size:16px; color:#4cbd14; background:url(img/bgline1.jpg) repeat-x 0 30px;}
+.center .ul1{padding-top:7px;}
+.center .ul1 li{padding-left:13px; background:url(img/jiantou.jpg) no-repeat 2px 8px; line-height:24px; height:24px;}
+.center .ul1 li a{color:#868686;}
+.center .ul1 li .a1{padding-left:25px;}
+.center .ul1 li .a2{padding-left:13px;}
+.center .ul1 li .a3{padding-left:19px;}
+.center .ul1 li .a4{padding-left:19px;}
+.center .ul1 li a:hover,.center .ul1 li .active{color:#4cbd14;}
+.center .left1 p{padding-top:12px; height:16px;}
+.center .left1 p img{width:41px; height:11px; float:right; padding-right:11px; overflow:hidden;}
+.center .left2{padding-top:5px;}
+.center .left2 h3{height:31px; line-height:30px; font-size:16px; color:#4cbd14; background:url(img/bgline1.jpg) repeat-x 0 30px;}
+.center .ul2{padding-top:15px;}
+.center .ul2 li{float:left; padding:0 12px 17px 3px;}
+.center .ul2 li .img1 img{width:156px; height:104px;}
+.center .ul2 li .img2 img{width:157px; height:104px;}
+
+.center .left3{padding-top:5px;}
+.center .ul3 li{padding-left:13px; background:url(img/jiantou.jpg) no-repeat 2px 8px; line-height:24px; height:24px;}
+.center .ul3 li a{color:#868686;;}
+.center .ul3 li a:hover,.center .ul3 li .active{color:#4cbd14;}
+.center .ul3 li .a1{padding-left:22px;}
+.center .ul3 li .a2{padding-left:19px;}
+.center .left3 a img{width:41px; height:11px; overflow:hidden;}
+.center .left3 p{padding-top:4px;}
+.center .left3 p img{width:41px; height:11px; float:right; padding-right:18px; overflow:hidden;}
+
+.center .right{float:left; padding-left:58px; background:#FFF; width:541px;}
+.center .right h3{line-height:36px; font-size:16px; color:#4cbd14;}
+.center .right p a{line-height:24px; color:#707070;}
+.center .right p a:hover{color:#4cbd14;}
+
+.foot{background:url(img/bg.jpg) no-repeat; width:980px; height:90px; text-align:center; vertical-align:top; margin-top:39px; padding-top:16px;}
+.foot p{color:#649b48; line-height:16px; font-family:"宋体"; height:16px; overflow:hidden;}
+.foot p .now{padding-left:12px;}
+.foot p .copy{padding-left:13px; padding-right:12px;}
+.foot p .dizhi{padding-left:19px;}
+</style>
+</head>
+
+<body>
+<div class="nav">
+	<div class="top clear">
+    	<h1><a href="#"><img src="img/ico.jpg" alt=""/></a></h1>
+    	<div class="head clear">
+        	<form action="">
+                <input class="submit" type="submit" name="submit" value=""/>
+                <input class="text" type="text" name="text" value="输入关键词"/>
+            </form>
+        <div class="head1 clear">
+            <a class="login" href="#">登陆</a>
+            <a class="register" href="#">注册</a>
+            <a class="weibo" href="#">官方微博</a>
+        </div>
+        </div>
+        <div class="footer">
+        	<a href="#">心友社</a>
+            <a class="active" href="#">心理教育</a>
+            <a href="#">心理科普与自助资源</a>
+            <a href="#">心理测评</a>
+            <a href="#">心理咨询</a>
+            <a href="#">中心简介</a>
+            <a href="#">首 页</a>
+        </div>
+    </div>
+    <div class="second clear">
+   	  <div class="left">
+        	<img src="img/huandengp.jpg" alt="/">
+            <ul class="page clear">
+            	<li><a class="active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+        </div>
+        <ul class="right">
+        	<li class="mouse" id="li1">
+            	<h3><a href="#">心理科普:爱与亲密</a></h3>
+                <p>恋爱,识别男人的真爱与伪爱,如何安慰失恋好友等。</p>
+                <span></span>
+            </li>
+            <li class="txt">
+            	<h3><a href="#">心理留言板</a></h3>
+                <p>日常工作问题,心理咨询问题,测评相关问题。</p>
+                <span></span>
+            </li>
+            <li class="excel">
+            	<h3><a href="#">常用表格下载</a></h3>
+                <p>心理素质中心日常工作相关的表格下载中心。</p>
+            </li>
+        </ul>
+    </div>
+    <div class="center clear">
+    	<div class="left">
+        	<div class="left1">
+                <h3>通知公告</h3>
+                <ul class="ul1">
+                    <li><a class="active" href="#">中瑞创伤后应激障碍网络干预项目招募参与<span class="a1">2012-3-5</span></a></li>
+                    <li><a href="#">张西超博士接受《环球时报》(英文版专访)<span class="a2">2012-3-5</span></a></li>
+                    <li><a href="#">北京市工商局杨局长一行专程来我司考察<span class="a3">2012-3-5</span></a></li>
+                    <li><a href="#">福指数"公益调查即将免费推出<span class="a4">2012-3-5</span></a></li>
+                    <li><a href="#">张西超博士接受《环球时报》(英文版专访)<span class="a2">2012-3-5</span></a></li>
+                    <li><a href="#">北京市工商局杨局长一行专程来我司考察<span class="a3">2012-3-5</span></a></li>
+                </ul>
+                <p><a href="#"><img src="img/more.jpg" alt=""/></a></p>
+            </div>
+            <div class="left2">
+                <h3>新闻动态</h3>
+                <ul class="ul2 clear">
+                    <li><a class="img1" href="#"><img src="img/pic1.jpg" alt=""></a></li>
+                    <li><a class="img2" href="#"><img src="img/pic2.jpg" alt=""></a></li>
+                    <li><a class="img1" href="#"><img src="img/pic3.jpg" alt=""></a></li>
+                    <li><a class="img2" href="#"><img src="img/pic4.jpg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="left3">
+            	<ul class="ul3">
+                	<li><a class="active" href="#">第十二届心理健康节开幕.<span class="a1">2012-3-5</span></a></li>
+                    <li><a class="active" href="#">全球最大EAP供应商ComPsych资深副总裁带队将出席..2012-3-5</a></li>
+                    <li><a href="#">第七届"中国EAP与PSA年度论坛"将在北京举办<span class="a2">2012-3-5</span></a></li>
+                    <li><a href="#">2012"中国EAP与PSA年度论坛已开放注册<span class="a2">2012-3-5</span></a></li>
+                    <li><a href="#">第七届"中国EAP与PSA年度论坛"将在北京举办<span class="a2">2012-3-5</span></a></li>
+                    <li><a href="#">2012"中国EAP与PSA年度论坛已开放注册<span class="a2">2012-3-5</span></a></li>
+                </ul>
+                <p><a href="#"><img src="img/more.jpg" alt=""/></a></p>
+            </div>
+        </div>
+        <div class="right">
+        	<img src="img/fengche.jpg" alt=""/>
+            <h3>友情链接</h3>
+            <p>
+                <a href="#">北师大心理咨询中心</a>
+                <a href="#">首师大心理咨询中心</a>
+                <a href="#">人大心理健康教育与咨询中心</a>
+                <a href="#">农大心理咨询中心</a>
+                <a href="#">安定医院心理咨询中心</a>
+                <a href="#">安定医院</a>
+                <a href="#">北京心理危机干预与研究中心</a>
+                <a href="#">林紫心理咨询中心</a>
+                <a href="#">苏晓波心理诊所</a>
+            </p>
+        </div>
+    </div>
+    <div class="foot">
+    	<p>昨日访问: 239884<span class="now">今日访问:2398 日均访问:239885</span></p>
+        <p>北京工商大学版权所有<span class="copy">Copyright © 2009 All Rights Reserved. Email:weibomaster@btbu.edu.cn</span><span class="jingg">京公网安备 110402430072 号</p>
+        <p>地址:北京市良乡高教园区 邮编: 102488<span class="dizhi">海淀区阜成路11号、33号 邮编: 100048</span></p>
+    </div>
+</div>
+</body>
+</html>

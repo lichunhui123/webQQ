@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<style>
+.well{width:770px;margin:10px auto;overflow:hidden;}
+body,ul,li,p,h4{margin:0;padding:0;font-size:14px;list-style:none;}
+div{margin-top:10px;padding-left:10px;}
+div p{text-indent:10px;line-height:25px;font-size:18px;}
+span{letter-spacing:2px;text-shadow: 2px 1px 2px #ddd;font-size:18px;}
+ul{margin-top:25px;}
+li{line-height:28px;padding-left:15px;width:760px;}
+.p1{text-align:left;padding:20px 0 0 0;text-indent:10px;font-size:20px;padding-left:15px;width:740px;}
+</style>
+</head>
+
+<body>
+<div class="well">
+	<ul>
+		<li>web QQ是作者一人耗时两个星期完成，借鉴腾讯WebQQ（http://web.qq.com/）开发的一个Web Desktop,和业内一些常用公开的方法和函数。</li>
+		<li>使用原生JavaScript进行开发，自己将常用的JS函数方法封装，名为“lch.js”。</li>
+		<li>其中采用了css3和html5的一些新功能，在Chrome浏览器下拥有更好的支持</li>
+		<li>该作品在WebQQ的交互和体验上重新进行了很多思考，实现了一些相应的功能。</li>
+		<li>_______________________________________________</li>
+		<li><h4>1.Desktop APP：</h4></li>
+		<li>（1）APP自动竖排布局：根据可视区的高度，计算出每一个APP的top和left值，然后设置；</li>
+		<li>（2）APP互换位置（缓冲运动效果）：判断距离最近APP，然后让两者的top和left值互相更换；</li>
+		<li>（3）窗口改变大小的时APP重新排列位置：当window.onresize事件触发时，立即重新排列APP</li>
+		<li><h4>2.设置网站的图标：</h4>网页标题栏上设置了ico图标</li>
+		<li><h4>3、桌面天气挂件:</h4></li>
+		<li>(1)用Ajax获取各个城市的温度和天气情况，json获取了各个城市的信息。可以拖拽关闭</li>
+		<li>选择城市后，确定，显示当前城市的天气情况，默认显示北京昌平地区的天气和时间</li>
+		<li><h4>4、主题设置:</h4></li>
+		<li>（1）打开对应的弹出窗，点击图片获取获取地址，更换背景图</li>
+		<li>（2）自动用cookie保存背景颜色，刷新后背景不变(本地测试在火狐下进行)</li>
+		<li><h4>5、APP的弹出层：</h4></li>
+		<li>（1）具有最小化，最大化，还原窗口功能：最小化使用多个运动让效果达到逼真的最小化动画效果；</li>
+		<li>（2）根据点击不同的APP，改变弹出层内容:设置对应的链接内容，达到最好的体验效果</li>
+		<li><h4>6、桌面时钟</h4></li>
+		<li>（1）用HTML5制作了桌面的时钟，获取了标准时间，配合定时器，实现同步加载;</li>
+		<li>（1）用了IE，Chrome浏览器下2种不同的样式（介意使用Chrome观看）。</li>
+		<li><h4>7、右键菜单【刷新】模拟windows刷新功能；</h4></li>
+		<li><h4>8、右键菜单【主题设置】，</h4>点击背景图片可以改变桌面的背景</li>
+		<li><h4>9、右键菜单【图标设置】，</h4>可以切换图标，改变桌面图标的大小，以运动的形式移动位置</li>
+		<li><h4>10、点击桌面，右键菜单淡出桌面</h4></li>
+		<li><h4>11、设置弹出框:</h4></li>
+		<li>（1）自由拖拽（限制在可视区范围）：将自由拖拽封装成函数，在这里调用；</li>
+		<li>（2）移入移出的运动效果：使用已经封装好的运动框架，让其在打开、关闭时做缓冲运动；</li>
+		<li>（3）弹出框的四周均使用了CSS3中的“border-radius”，这样来设置圆角。</li>
+		<li>（4）新窗口设有最小化、最大化、缩小以及关闭功能，窗口最小化后将在任务栏中出现。</li>
+		<li><h4>12、右侧菜单采用了苹果导航的思路</h4>，导航是通过计算鼠标到期图片中心距离，得出比例，最近为最大，反之最小，另外设置最小值。</li>
+		<li><h4>13、点击焦点切换桌面:</h4></li>
+		<li>（1）点击焦点数字的时候，运动，并改变透明度切换桌面图标</li>
+		<li>（2）用鼠标滚轮同样可以切换桌面</li>
+		<li><h4>14、点击桌面图标，</h4>显示对应网站的链接</li>
+		<li><h4>15.右键菜单的重新设置：</h4>让“document.oncontextmenu”的return返回“false” ，重新设置右键菜单，让其“top”和“left”跟随鼠标的坐标<li>
+	</ul>
+	<p class="p1">整个webQQ是利用业余的时间边学边做的，建议使用标准浏览器，还有许多小细节上的考虑就不再详述</p>
+	<li>______________________________________________________________________________________________</li>
+	<div>
+		<p><span>作者联系方式</span></p>
+		<p>姓名：<span>李春辉</span></p>
+		<p>手机：<span>15712927517</span></p>
+		<p>Email：<span>1263558423@qq.com</span></p>
+		<p>Q Q：<span>1263558423</span></p>
+	</div>
+</div>
+</body>
+</html>

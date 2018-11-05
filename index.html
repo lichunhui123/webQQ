@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>webQQ</title>
+<link rel="shortcut icon" href="imgs/favicon.ico">
+<link href="css/index.css" rel="stylesheet">
+<script src="js/index.js"></script>
+<script src="js/lch.js"></script>
+<script src="js/citymap.js"></script>
+</head>
+
+<body>
+	<!--左侧导航条-->
+	<div id="web_main_menu" class="abs">
+    	<div class="web_main_menu_cn">
+        	<ul id="web_menu" class="clear">
+            	<li title="应用市场">
+                	<a href="javascript:;">
+                    	<img src="imgs/big0.png"/>
+                    </a>
+                </li>
+                <li title="我的网盘">
+                	<a href="javascript:;">
+                    	<img src="imgs/big1.png"/>
+                    </a>
+                </li>
+                <li title="QQ">
+                	<a href="javascript:;">
+                    	<img src="imgs/big2.png"/>
+                    </a>
+                </li>
+                <li title="QQ空间">
+                	<a href="javascript:;">
+                    	<img src="imgs/big3.png"/>
+                    </a>
+                </li>
+                <li title="QQ邮箱">
+                	<a href="javascript:;">
+                    	<img src="imgs/big4.png"/>
+                    </a>
+                </li>
+                <li title="腾讯微博">
+                	<a href="javascript:;">
+                    	<img src="imgs/big5.png"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="web_main_menu_focus abs">
+        	<ul class="clear">
+            	<li>
+                	<a href="javascript:;" class="focus_1"></a>
+                </li>
+                <li>
+                	<a href="javascript:;" class="focus_2"></a>
+                </li>
+                <li>
+                	<a href="javascript:;" class="focus_3"></a>
+                </li>
+                <li>
+                	<a href="javascript:;" class="focus_4"></a>
+                </li>
+                <li class="main_menu_focus_cn">
+                	<a href="javascript:;" class="focus_5"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--主题设置-->
+    <div id="web_main">
+    	<div class="web-main">
+        	<img src="imgs/bg1.jpg" class="bg abs" id="bg"/>
+        </div>
+    </div>
+    
+    <!--天气-->
+    <div id="web_weather">
+    	<div class="weather">
+            <div class="weather_close abs"></div>
+            <div class="weather_today">
+                <strong>今天 : 晴 -7℃~3℃</strong>
+            </div>
+            <div class="weather_tom">
+                <strong>明天 : 晴 -6℃~4℃</strong>
+            </div>
+            <a href="javascript:;" class="weather_region" id="region">昌平</a>
+            <div class="weather_time" id="nowtime">当前时间为20:31</div>
+            <div class="weather_menu">
+                <select id="city1">
+                    <option>==请选择地区==</option>
+                    
+                </select>
+                <select id="city2">
+                    <option>==请选择城市==</option>
+                </select>
+                <input type="button" value="确定" class="wea_btn1"/>
+                <input type="button" value="取消"/>
+            </div>
+        </div>
+    </div>
+    
+    <!--图片时钟-->
+    <div id="web_time">
+    	<div class="web_time_box">
+        	<div class="time_close abs"></div>
+        	<canvas id="c1" width="114" height="114">
+                <span>不支持canvas的浏览器可以看到的内容</span>
+            </canvas> <!--默认宽高(300*150)-->
+        </div>
+    </div>
+    
+    <!--头部导航-->
+    <div id="web_top" class="abs">
+		<div class="web_top_cn clear">
+        	<div class="web_top_ico">
+            	<a href="javascript:;" id="login_ico" title="请登录">
+                	<img src="imgs/avatar.png"/>
+                </a>
+            </div>
+            <ul class="web_top_focus clear">
+            	<li class="active">
+                	<a href="javascript:;">1</a>
+                </li>
+                <li>
+                	<a href="javascript:;">2</a>
+                </li>
+                <li>
+                	<a href="javascript:;">3</a>
+                </li>
+                <li>
+                	<a href="javascript:;">4</a>
+                </li>
+                <li>
+                	<a href="javascript:;">5</a>
+                </li>
+            </ul>
+            <div class="web_top_ri">
+            	<a href="javascript:;" class="web_main_view" title="全局视图"></a><a href="javascript:;" class="web_ss" title="搜索"></a>
+            </div>
+        </div>    
+    </div>
+    
+    <!--主内容-->
+    <div id="web_content" class="abs">
+    	<div class="web_content_cn abs">
+        	<ul class="abs">
+            	<li title="欢乐斗地主">
+                	<a href="javascript:;">
+                        <span><img src="imgs/d_big_11.png" /></span>
+                        <b><i><em>欢乐斗地主</em></i></b>
+                    </a>
+                </li>
+                <li title="3366">
+                	<a href="javascript:;">
+                        <span><img src="imgs/d_big_12.png" /></span>
+                        <b><i><em>3366</em></i></b>
+                    </a>
+                </li>
+                <li title="QQ宝贝">
+                	<a href="javascript:;">
+                        <span><img src="imgs/d_big_13.png" /></span>
+                        <b><i><em>QQ宝贝</em></i></b>
+                    </a>
+                </li>
+                <li title="css作品(1)">
+                	<a href="javascript:;">
+                        <span><img src="imgs/zx.png" /></span>
+                        <b><i><em>css作品(1)</em></i></b>
+                    </a>
+                </li>
+                <li title="css作品(2)">
+                	<a href="javascript:;">
+                        <span><img src="imgs/zx.png" /></span>
+                        <b><i><em>css作品(2)</em></i></b>
+                    </a>
+                </li>
+                <li title="js作品(1)">
+                	<a href="javascript:;">
+                        <span><img src="imgs/zx.png" /></span>
+                        <b><i><em>js作品(1)</em></i></b>
+                    </a>
+                </li>
+                <li title="js作品(2)">
+                	<a href="javascript:;">
+                        <span><img src="imgs/zx.png" /></span>
+                        <b><i><em>js作品(2)</em></i></b>
+                    </a>
+                </li>
+                <li title="说明文档">
+                	<a href="javascript:;">
+                        <span><img src="imgs/zx.png" /></span>
+                        <b><i><em>说明文档</em></i></b>
+                    </a>
+                </li>
+            </ul>
+            <ul class="abs">
+            	<li title="芒果旅游">
+                	<a href="javascript:;">
+                        <span><img src="imgs/d_big_21.png" /></span>
+                        <b><i><em>芒果旅游</em></i></b>
+                    </a>
+                </li>
+                <li title="团购地图">
+                	<a href="javascript:;">
+                        <span><img src="imgs/d_big_22.png" /></span>
+                        <b><i><em>团购地图</em></i></b>
+                    </a>
+                </li>
+                <li title="快速查询">
+                	<a href="javascript:;">
+                        <span><img src="imgs/d_big_23.png" /></span>
+                        <b><i><em>快速查询</em></i></b>
+                    </a>
+                </li>
+                <li title="便签">
+                	<a href="javascript:;">
+                        <span><img src="imgs/d_big_24.png" /></span>
+                        <b><i><em>便签</em></i></b>
+                    </a>
+                </li>
+                <li title="网络硬盘">
+                	<a href="javascript:;">
+                        <span><img src="imgs/d_big_25.png" /></span>
+                        <b><i><em>网络硬盘</em></i></b>
+                    </a>
+                </li>
+            </ul>
+            <ul class="abs">
+            	<li title="金山快盘">
+                	<a href="javascript:;">
+                        <span><img src="imgs/big01.png" /></span>
+                        <b><i><em>金山快盘</em></i></b>
+                    </a>
+                </li>
+                <li title="浏览网页">
+                	<a href="javascript:;">
+                        <span><img src="imgs/big02.png" /></span>
+                        <b><i><em>浏览网页</em></i></b>
+                    </a>
+                </li>
+                <li title="时钟" class="timer">
+                	<a href="javascript:;">
+                        <span><img src="imgs/big03.png" /></span>
+                        <b><i><em>时钟</em></i></b>
+                    </a>
+                </li>
+                <li title="天气" class="weather">
+                	<a href="javascript:;">
+                        <span><img src="imgs/big04.png" /></span>
+                        <b><i><em>天气</em></i></b>
+                    </a>
+                </li>
+                <li title="读览天下">
+                	<a href="javascript:;">
+                        <span><img src="imgs/big05.png" /></span>
+                        <b><i><em>读览天下</em></i></b>
+                    </a>
+                </li>
+                <li title="豆瓣FM">
+                	<a href="javascript:;">
+                        <span><img src="imgs/big06.png" /></span>
+                        <b><i><em>豆瓣FM</em></i></b>
+                    </a>
+                </li>
+            </ul>
+            <ul class="abs">
+            	<li title="起点中文">
+                	<a href="javascript:;">
+                        <span><img src="imgs/d_big_41.png" /></span>
+                        <b><i><em>起点中文</em></i></b>
+                    </a>
+                </li>
+                <li title="QQ阅读">
+                	<a href="javascript:;">
+                        <span><img src="imgs/d_big_42.png" /></span>
+                        <b><i><em>QQ阅读</em></i></b>
+                    </a>
+                </li>
+                <li title="音乐盒子">
+                	<a href="javascript:;">
+                        <span><img src="imgs/d_big_43.png" /></span>
+                        <b><i><em>音乐盒子</em></i></b>
+                    </a>
+                </li>
+                <li title="腾讯视频">
+                	<a href="javascript:;">
+                        <span><img src="imgs/d_big_44.png" /></span>
+                        <b><i><em>腾讯视频</em></i></b>
+                    </a>
+                </li>
+                <li title="乐视网">
+                	<a href="javascript:;">
+                        <span><img src="imgs/d_big_45.png" /></span>
+                        <b><i><em>乐视网</em></i></b>
+                    </a>
+                </li>
+                
+            </ul>
+            <ul class="abs">
+            	<li title="朋友网">
+                	<a href="javascript:;">
+                        <span><img src="imgs/d_big_51.png" /></span>
+                        <b><i><em>朋友网</em></i></b>
+                    </a>
+                </li>
+                <li title="QQ阅读">
+                	<a href="javascript:;">
+                        <span><img src="imgs/d_big_52.png" /></span>
+                        <b><i><em>QQ阅读</em></i></b>
+                    </a>
+                </li>
+                <li title="好友管理">
+                	<a href="javascript:;">
+                        <span><img src="imgs/d_big_53.png" /></span>
+                        <b><i><em>好友管理</em></i></b>
+                    </a>
+                </li>
+                <li title="开开">
+                	<a href="javascript:;">
+                        <span><img src="imgs/d_big_54.png" /></span>
+                        <b><i><em>开开</em></i></b>
+                    </a>
+                </li>
+                <li title="开心交友">
+                	<a href="javascript:;">
+                        <span><img src="imgs/d_big_55.png" /></span>
+                        <b><i><em>开心交友</em></i></b>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    
+    <!--弹窗-->
+    <div id="web_dialog">
+    	<div class="web_dialog_top">
+        	<p>QQ</p>
+            <div class="web_dialog_win">
+            	<a href="javascript:;" class="reduce" title="最小化"></a>
+                <a href="javascript:;" class="magnify" title="最大化"></a>
+                <a href="javascript:;" class="close" title="关闭"></a>
+            </div>
+        </div>
+        <div class="web_dialog_con">
+        	<iframe>
+            </iframe>
+        </div>
+    </div>
+    
+    <!--主题弹窗-->
+    <div id="web_theme">
+    	<div class="web_theme_top">
+        	<p>主题设置</p>
+            <div class="web_theme_win">
+                <a href="javascript:;" class="close" title="关闭"></a>
+            </div>
+        </div>
+        
+        <div class="web_theme_con">
+        	<ul class="clear">
+            	<li>
+                	<img src="imgs/bg1.jpg" />
+                    <p>深海仰望</p>
+                </li>
+                <li>
+                	<img src="imgs/bg2.jpg" />
+                    <p>梦幻光影</p>
+                </li>
+                <li>
+                	<img src="imgs/bg3.jpg" />
+                    <p>七夕</p>
+                </li>
+                <li>
+                	<img src="imgs/bg4.jpg" />
+                    <p>梦翔天际</p>
+                </li>
+                <li>
+                	<img src="imgs/bg5.jpg" />
+                    <p>幻彩荧光</p>
+                </li>
+                <li>
+                	<img src="imgs/bg6.jpg" />
+                    <p>蒲英之梦</p>
+                </li>
+                <li>
+                	<img src="imgs/bg7.jpg" />
+                    <p>粉红之夜</p>
+                </li>
+                <li>
+                	<img src="imgs/bg8.jpg" />
+                    <p>甜蜜情人节</p>
+                </li>
+                <li>
+                	<img src="imgs/bg9.jpg" />
+                    <p>茫茫野草</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!--最小化-->
+    <div id="web_task">
+    	<a href="javascript:;">
+        	<img src="imgs/big0.png" />
+        	<h3>应用市场</h3>
+        </a>
+    </div>
+    
+    <!--右键菜单-->
+    <div id="web_text_menu">
+    	<ul class="text_menu">
+        	<li class="showdesk">
+            	<a href="javascript:;">显示桌面</a>
+            </li>
+            <li class="menu_bottom">
+            	<a href="javascript:;">刷新</a>
+            </li>
+            <li>
+            	<a href="javascript:;">添加<span class="span1"></span></a>
+                <ul>
+                	<li><a href="javascript:;"><span class="span2"></span>添加应用</a></li>
+                    <li><a href="javascript:;"><span class="span3"></span>添加桌面联系人</a></li>
+                </ul>
+            </li>
+            <li class="menu_bottom">
+            	<a href="javascript:;">上传文件</a>
+            </li>
+            <li class="menu_bottom">
+            	<a href="javascript:;">QQ云词典</a>
+            </li>
+            <li class="theme">
+            	<a href="javascript:;">主题设置</a>
+            </li>
+            <li>
+            	<a href="javascript:;">系统设置</a>
+            </li>
+            <li class="menu_bottom" id="menubtn">
+            	<a href="javascript:;">图标设置<span class="span1"></span></a>
+                <ul>
+                	<li class="active"><a href="javascript:;">小图标</a></li>
+                    <li><a href="javascript:;">大图标</a></li>
+                </ul>
+            </li>
+            <li>
+            	<a href="javascript:;">反馈</a>
+            </li>
+            <li>
+            	<a href="javascript:;">注销</a>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>

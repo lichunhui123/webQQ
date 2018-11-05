@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* CSS Document */
+/* reset.css */
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,th,td{margin:0; padding:0; font-size:12px; font-family:"微软雅黑";}
+em{font-style:normal}
+li{list-style:none}
+a{text-decoration:none;}
+img{border:none; vertical-align:top;}
+table{border-collapse:collapse;}
+textarea{ resize:none; overflow:auto;}
+/* end reset.css */
+
+
+/* public.css */
+.clear{zoom:1;}
+.clear:after{content:""; display:block; clear:both;}
+.wrap{width:980px; margin:0 auto;}
+#header{width:100%; height:81px; background:url(../imgs/aqualogy_normal2.jpg) no-repeat -286px 0;}
+.headL{height:70px; padding-top:10px;}
+.headL h1{float:left;}
+.nav{float:right;}
+.nav li{float:left; height:71px; line-height:65px; font-size:16px;}
+.nav a{color:#d6e1ea; float:left; height:66px; padding:0 12px;}
+.nav a:hover,.nav .active{color:#4ade35; border-bottom:5px solid #67e735;}
+#footer{width:100%; height:260px; background:#f0f1f3; border-top:1px solid #e2e4e7;}
+#footer .bottom{padding-top:32px;}
+#footer .flink{float:left; width:360px; padding-left:30px;}
+#footer h3{font-size:14px; line-height:28px; color:#333942;}
+.flink p{line-height:30px; width:245px;}
+.flink a{color:#717c92;}
+.flink a:hover{text-decoration:underline;}
+#footer .service{float:left; width:280px;}
+.service p{line-height:30px; width:150px; color:#847c92;}
+#footer .contact{float:left; width:300px;}
+.contact p{line-height:30px; width:162px; color:#717c92;}
+.contact a{color:#323232;}
+.contact a:hover{text-decoration:underline;}
+.copyright{text-align:center; color:#717c92; display:block; padding-top:40px;}
+/* end public.css*/
+
+
+/* index.css(i)*/
+#iBanner{width:100%; height:600px; background:url(../imgs/aqualogy_normal2.jpg) no-repeat -286px -81px;}
+.bannerBox{height:600px; position:relative;}
+.infor{height:600px; position:relative;}
+.infor_1{width:471px; height:61px; background:url(../imgs/infor.png) no-repeat; position:absolute; top:120px;}
+.infor_2{width:471px; height:43px; background:url(../imgs/infor.png) no-repeat 0 -76px; position:absolute; top:196px;}
+.weibo{position:absolute; left:9px; top:294px; background:url(../imgs/weibo.png) no-repeat; width:81px; height:26px;}
+.dlbtn{background:url(../imgs/dlbtn.png) no-repeat -323px 0; position:absolute; top:332px; left:4px; width:294px; height:90px;}
+.dlbtn:hover{background-position:0 0;}
+.dlbtn:active{background-position:-649px 0;}
+/*.broadcast{color:#40545d; position:absolute; padding-left:27px; left:7px; top:482px; height:18px; line-height:18px; background:url(../imgs/broadcast_ico.png) no-repeat;}
+.broadcast:hover{text-decoration:underline;}*/
+.broadcast{position:absolute; left:0; top:460px;}
+.phone1{background:url(../imgs/phone1.png) no-repeat; width:267px; height:511px; position:absolute; bottom:-22px; right:45px; z-index:2;}
+.phone1 img{padding-top:50px; padding-left:17px;}
+.phone2{background:url(../imgs/phone2.png) no-repeat; width:207px; height:436px; position:absolute; right:176px; bottom:0; z-index:1;}
+.phone2 img{padding-top:63px; padding-left:17px;}
+.saturn{width:563px; height:428px; position:absolute; right:-69px; top:194px; z-index:3;}
+#iDownload{width:100%; height:148px; background:url(../imgs/downloadbg.jpg) repeat-x; border-bottom:1px solid #e2e4e7;}
+#iDownload .cutline{background:url(../imgs/cutline.jpg) no-repeat 0 1px; width:1px; height:147px; float:left;}
+#iDownload a{float:left; width:242px; height:149px;}
+#iDownload a span{background:url(../imgs/download.png) no-repeat; float:left;}
+#iDownload .android span{width:173px; height:64px; margin-left:31px; margin-top:55px;}
+#iDownload .android:hover{background:url(../imgs/a_bg.jpg) repeat-x;}
+#iDownload .android:active{background:url(../imgs/a_bg.jpg) repeat-x 0 -149px;}
+#iDownload .iphone span{width:173px; height:64px; background-position:-173px 0; margin-left:36px; margin-top:55px;}
+#iDownload .iphone:hover{background:url(../imgs/a_bg.jpg) repeat-x 0 -298px;}
+#iDownload .iphone:active{background:url(../imgs/a_bg.jpg) repeat-x 0 -447px;}
+#iDownload .symbine span{width:173px; height:64px; background-position:-346px 0; margin-left:36px; margin-top:55px;}
+#iDownload .symbine:hover{background:url(../imgs/a_bg.jpg) repeat-x 0 -596px;}
+#iDownload .symbine:active{background:url(../imgs/a_bg.jpg) repeat-x 0 -745px;}
+#iDownload .other span{width:185px; height:64px; background-position:-519px 0; margin-left:26px; margin-top:55px;}
+#iDownload .other:hover{background:url(../imgs/a_bg.jpg) repeat-x 0 -894px;}
+#iDownload .other:active{background:url(../imgs/a_bg.jpg) repeat-x 0 -1043px;}
+#iMain .feature_wrap{background:url(../imgs/featurebg.jpg) no-repeat; height:160px; width:980px; margin-top:22px;}
+#iMain .feature_wrap .feature{width:295px; height:136px; padding:17px 0 0 30px; float:left;}
+#iMain .feature_wrap .feature h3{font-size:24px; line-height:50px; color:#58724e; font-weight:normal;}
+#iMain .feature_wrap .feature .fea_2{color:#74624f;}
+#iMain .feature_wrap .feature .fea_3{color:#525d7d;}
+#iMain .feature_wrap .feature p{font-size:14px; line-height:20px; color:#9d9fa2; width:128px;}
+#iMain .section_1{width:980px;  height:72px; border-bottom:1px solid #e8ebee;}
+#iMain .section_1 h2{font-size:24px; line-height:84px; height:72px; overflow:hidden; float:left; color:#666666; font-weight:normal;}
+#iMain .section_1 a{float:right; font-size:16px; color:#323232; line-height:88px; height:75px; overflow:hidden;}
+#iMain .section_1 a:hover{text-decoration:underline;}
+#iMain .section_2{width:980px; height:233px; background:url(../imgs/bordercast_img.jpg) no-repeat 668px 37px;}
+#iMain .section_2 .name{font-size:24px; line-height:102px; height:81px; overflow:hidden;}
+#iMain .section_2 .name a{color:#5597bd;}
+.name a:hover{text-decoration:underline;}
+#iMain .section_2 .des{width:586px; line-height:30px; color:#666666; text-indent:2em; font-size:14px;}
+#iMain .section_2 .blue{width:588px; text-align:right; font-size:14px; line-height:30px;}
+#iMain .section_2 .blue a{color:#5597bd;}
+.section_2 .blue a:hover{text-decoration:underline;}
+#iMain .recommend_wrap h2{width:980px; height:42px; border-bottom:1px solid #e8ebee; font-size:24px; color:#666666; font-weight:normal;}
+#iMain .recommend_list{padding-top:1px; padding-bottom:29px; width:980px;}
+#iMain .recommend_list li{width:302px; float:left; padding:19px 13px 0 10px;}
+#iMain .recommend_list li img{width:302px; height:126px;}
+/* end index.css*/
+
+/* intro.css(tro)*/
+#troDownload{width:100%; height:108px; background:url(../imgs/downloadbg.jpg) repeat-x 0 -40px; border-bottom:1px solid #e2e4e7;}
+#troDownload .section{position:relative;}
+#troDownload a{float:left; width:242px; height:108px;}
+#troDownload .cutline{background:url(../imgs/cutline.jpg) no-repeat 0 -39px; width:1px; height:108px; float:left;}
+#troDownload a span{background:url(../imgs/tro.png) no-repeat; float:left; width:170px; height:56px;}
+#troDownload .android span{margin-left:31px; margin-top:28px;}
+#troDownload .android:hover{background:url(../imgs/a_bg.jpg) repeat-x 0 -40px;}
+#troDownload .android:active,#troDownload .active{background:url(../imgs/a_bg.jpg) repeat-x 0 -189px;}
+#troDownload .iphone span{background-position:-170px 0; margin-left:30px; margin-top:28px;}
+#troDownload .iphone:hover{background:url(../imgs/a_bg.jpg) repeat-x 0 -338px;}
+#troDownload .iphone:active{background:url(../imgs/a_bg.jpg) repeat-x 0 -487px;}
+#troDownload .symbine span{background-position:-340px 0; margin-left:38px; margin-top:26px;}
+#troDownload .symbine:hover{background:url(../imgs/a_bg.jpg) repeat-x 0 -636px;}
+#troDownload .symbine:active{background:url(../imgs/a_bg.jpg) repeat-x 0 -785px;}
+#troDownload .intro_current{background:url(../imgs/intro_current.png) no-repeat; width:22px; height:11px; position:absolute; left:105px; top:108px;}
+.down{padding-top:12px; position:relative;}
+.down h3{font-size:22px; line-height:78px; color:#444444; font-weight:normal;}
+.dbtn a{background:url(../imgs/downbg.png) no-repeat; width:197px; height:83px; position:relative;}
+.dbtn .blue{float:left; margin-left:2px; display:inline-block;}
+.blue:hover{background-position:-197px 0;}
+.blue:active{background-position:-394px 0;}
+.title{font-size:26px; color:#ffffff; text-align:center; font-weight:bold; width:100%; float:left; line-height:28px; padding-top:20px;}
+.version{float:left; width:100%; text-align:center; line-height:20px; color:#ffffff;}
+.dbtn .green{margin-left:10px; float:left; background-position:0 -83px; display:inline-block;}
+.green:hover{background-position:-197px -83px;}
+.green:active{background-position:-394px -83px;}
+.dother{float:left; padding-left:24px; padding-top:5px; height:78px; overflow:hidden;}
+.dother span{line-height:42px; font-size:16px; color:#333333; width:100px; display:inline-block;}
+.dother a{background:none; margin:0 5px; color:#7a97cb; line-height:42px; font-size:14px;}
+.dother a:hover{text-decoration:underline;}
+.intro_detail{height:650px; margin-top:77px; background:url(../imgs/android2.png) no-repeat center 0; position:relative;}
+.intro_detail .android_screen{background:url(../imgs/intro_android3.jpg) no-repeat; width:267px; height:472px; position:absolute; left:357px; top:56px;}
+.intro_detail .d1,.intro_detail .d2,.intro_detail .d3,.intro_detail .d4{position:absolute; background:url(../imgs/detailbg.jpg) no-repeat; top:10px; width:276px; height:238px;}
+.intro_detail .d1_ico,.intro_detail .d2_ico,.intro_detail .d3_ico,.intro_detail .d4_ico{background:url(../imgs/bico.png) no-repeat; width:64px; height:64px; position:absolute; left:105px; top:30px;}
+.intro_detail .tl{margin-top:100px; line-height:50px; font-size:24px; color:#666666; text-align:center; display:block;}
+.intro_detail .des{text-align:center; display:block; font-size:14px; color:#666666; width:200px; margin:0 auto;}
+.intro_detail .d2{top:302px;}
+.intro_detail .d3{right:3px;}
+.intro_detail .d4{top:302px; right:3px;}
+.intro_detail .d2_ico{background-position:-64px 0; width:63px; height:63px;}
+.intro_detail .d3_ico{background-position:-126px 0; width:63px; height:63px;}
+.intro_detail .d4_ico{background-position:-189px 0; width:63px; height:63px;}
+.intro_detail .d1:active,.intro_detail .d2:active,.intro_detail .d3:active,.intro_detail .d4:active{background:url(../imgs/detailbghover.jpg) no-repeat;}
+.d1:active .d1_ico{background-position:0 -68px;}
+.d2:active .d2_ico{background-position:-64px -68px;}
+.d3:active .d3_ico{background-position:-126px -68px;}
+.d4:active .d4_ico{background-position:-189px -68px;}
+.d1:active .tl,.d2:active .tl,.d3:active .tl,.d4:active .tl{color:#228305;}
+.d1:active .arrow_r,.d2:active .arrow_r{position:absolute; left:270px; bottom:114px; width:18px; height:22px; background:url(../imgs/arrow.png) no-repeat -53px 0;}
+.d3:active .arrow_l,.d4:active .arrow_l{position:absolute; right:273px; bottom:114px; width:18px; height:22px; background:url(../imgs/arrow.png) no-repeat;}
+#troIphone .dother p{color:#666666; line-height:50px;}
+#troIphone .intro_detail{height:650px; margin-top:77px; background:url(../imgs/iphone3.png) no-repeat center 0; position:relative;}
+#troIphone .iphone_screen{background:url(../imgs/intro_iphone3.jpg) no-repeat; width:244px; height:433px; position:absolute; left:368px; top:90px;}
+#troSymbian .title{font-size:20px; color:#ffffff; text-align:center; font-weight:bold; width:100%; float:left; line-height:30px; padding-top:18px;}
+.version{float:left; width:100%; text-align:center; line-height:20px; color:#ffffff;} 
+#troSymbian .intro_detail{height:650px; margin-top:77px; background:url(../imgs/symbain2.png) no-repeat center 0; position:relative;}
+#troSymbian .symbian_screen{background:url(../imgs/intro_symbain2.jpg) no-repeat; width:232px; height:404px; position:absolute; left:375px; top:96px;}
+/* end intro.css*/
+
+/* update.css(u)*/
+#uDownload{width:100%; height:108px; background:url(../imgs/downloadbg.jpg) repeat-x 0 -40px; border-bottom:1px solid #e2e4e7;}
+#uDownload .section{position:relative;}
+#uDownload a{float:left; width:242px; height:108px;}
+#uDownload .cutline{background:url(../imgs/cutline.jpg) no-repeat 0 -39px; width:1px; height:108px; float:left;}
+#uDownload a span{background:url(../imgs/tro.png) no-repeat; float:left; width:170px; height:56px;}
+#uDownload .android span{margin-left:31px; margin-top:28px;}
+#uDownload .android:hover{background:url(../imgs/a_bg.jpg) repeat-x 0 -40px;}
+#uDownload .android:active,#uDownload .active{background:url(../imgs/a_bg.jpg) repeat-x 0 -189px;}
+#uDownload .iphone span{background-position:-170px 0; margin-left:30px; margin-top:28px;}
+#uDownload .iphone:hover{background:url(../imgs/a_bg.jpg) repeat-x 0 -338px;}
+#uDownload .iphone:active{background:url(../imgs/a_bg.jpg) repeat-x 0 -487px;}
+#uDownload .symbine span{background-position:-340px 0; margin-left:38px; margin-top:26px;}
+#uDownload .symbine:hover{background:url(../imgs/a_bg.jpg) repeat-x 0 -636px;}
+#uDownload .symbine:active{background:url(../imgs/a_bg.jpg) repeat-x 0 -785px;}
+#uDownload .update_current{background:url(../imgs/intro_current.png) no-repeat; width:22px; height:11px; position:absolute; left:105px; top:108px;}
+#uAndroid{position:relative;}
+#uAndroid .uDown{width:100%; position:relative;}
+#uAndroid .down{position:absolute; width:460px; height:186px; left:521px; top:91px; z-index:2;}
+.year{width:100%; text-align:center; padding-top:20px; float:left;}
+.year span{width:74px; height:75px; background:url(../imgs/yearbg.jpg) no-repeat; display:inline-block; margin:0 auto; color:#fffffd; font-size:18px; line-height:62px;}
+.contact{width:100%; float:left; position:relative;}
+.list_left{width:475px; float:left;}
+.list_head{height:100px; background:url(../imgs/log_bg.png) no-repeat; padding-left:25px; padding-top:18px;}
+.list_head .date{font-size:20px; line-height:38px; padding-left:40px; background:url(../imgs/yearbg.jpg) no-repeat -74px 3px; color:#73839a; font-weight:bold;}
+.list_head .til{font-size:18px; line-height:60px; color:#333333; font-weight:bold;}
+.list_body span{line-height:30px; color:#666666; display:block; padding-left:25px; display:block; background:url(../imgs/log_bg.png) no-repeat 0 -100px;}
+.list_foot{height:34px; background:url(../imgs/log_bg.png) no-repeat 0 -687px;}
+.time_line{width:30px; height:240px; background:url(../imgs/log_bg.png) no-repeat -488px -17px; position:absolute; left:475px;}
+.list_right{width:475px; float:right;}
+.list_right .list_head{background-position:0 -745px;; padding-left:40px;}
+.list_right .list_body span{padding-left:40px; background-position:0 -845px;}
+.list_right .list_foot{padding-left:40px;  background-position:0 -1330px;}
+/* end update.css*/
+
+/* report.css(r)*/
+#Rsecurity{padding-right:20px; width:960px; margin:0 auto;}
+.sec_l{float:left; padding-left:20px; width:630px;}
+.sec{width:100%; border-bottom:1px solid #e8ebee; padding:20px 0;}
+.sec .secleft{background:url(../imgs/report_ico.jpg) no-repeat 3px 2px; width:95px; height:100px; float:left;}
+.sec .secleft .secl_til{text-align:center; padding-top:10px; color:#FFF;}
+.sec .secleft .secl_num{text-align:center; font-size:26px; color:#818fa2; font-weight:bold; padding-top:10px;}
+.sec .secleft .qi{font-size:14px;}
+.sec .secleft .secl_date{text-align:center; color:#FFF; padding-top:5px;}
+.sec .secright{float:left; width:520px; padding-left:10px;}
+.sec .secright .secr_til{font-size:20px; line-height:40px;}
+.sec .secright .secr_til a{color:#5d9de0;}
+.secr_til a:hover{text-decoration:underline;}
+.sec .secright .secr_contant{color:#666666; line-height:18px;}
+.sec .secright .secr_more{text-align:right;}
+.secr_more a{color:#5d8fd4;}
+.secr_more a:hover{text-decoration:underline;}
+.sec_l .page{height:50px; line-height:50px; margin-bottom:50px; float:right;}
+.page a{color:#323232; margin-left:6px;}
+.page a:hover{text-decoration:underline;}
+.page .active{color:#5d8fd4; font-weight:600;}
+.sec_r{float:right; width:278px; margin-top:20px; border:1px solid #e8ebef; }
+
+.sec_r h2{font-size:16px; color:#333333; height:42px; line-height:68px; overflow:hidden; padding-left:15px;}
+.sec_r .secr_til{font-weight:bold; color:#51aa36; float:left; width:245px; padding:9px 15px 0 15px; font-size:14px; line-height:20px;}
+.sec_r .line{float:left; background:url(../imgs/linebg.jpg) no-repeat; height:2px; width:278px; margin-top:15px; overflow:hidden;}
+.sec_r .secr_con{float:left; width:263px; padding-left:15px; color:#666666; line-height:28px;}
+.sec_r .down{background:url(../imgs/downbg.jpg) no-repeat; width:74px; height:32px; margin-left:15px; float:left; color:#323232; font-size:16px; text-align:center; padding:0; line-height:32px;}
+.sec_r .down:hover{background-position:-74px 0;}
+.sec_r .down:active{background-position:-148px 0;}
+.secr_til .gray{color:#9d9fa2; font-size:12px;}
+#Rsecurity .sec_r h3{font-size:16px; padding-top:32px; padding-left:15px; padding-bottom:66px; float:left;}
+#Rsecurity .sec_r h3 a{color:#5d8fd4;}
+#Rsecurity .sec_r h3 a:hover{text-decoration:underline;}
+/* end report.css(r)*/
